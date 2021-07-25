@@ -1,14 +1,13 @@
 /*General*/
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./fonts/fonts.scss";
+
+
 
 #bloc_page {
     min-width: 375px;
     width: 100%;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-}
+
 /*HEADER*/
 
 #bloc-header1 {
@@ -31,14 +30,35 @@ body {
         display: flex; 
         justify-content: center;
         padding-top: 15px;
-        font-size: 0.9em;
+        font-size: 1em;
         &__icon {
             margin-right: 15px;
         }
     }
 }
 
+/*Explore*/ 
+#blocExplore {
+    height: 290px;
 
+}
+
+#bloc-explore {
+    height: 290px;
+    width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+    &__title h1{
+        font-family: 'Roboto-Medium';
+        text-align: center;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    &__description {
+        padding-bottom: 35px;
+    }
+}
 
 
 

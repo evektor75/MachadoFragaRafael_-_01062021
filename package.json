@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./sass/main.scss:public/styles.css"
+    "sass":"sass --watch ./sass:public/css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/evektor75/MachadoFragaRafael_-_01062021.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evektor75/MachadoFragaRafael_-_01062021/issues"
+  },
+  "homepage": "https://github.com/evektor75/MachadoFragaRafael_-_01062021#readme"
 }
