@@ -1,0 +1,36 @@
+/*FOOTER*/  
+
+#bloc-footer {
+    height: 195px;
+    width: 100%;
+    margin-top: 65px;
+    background-color: $backgrond-color-footer;
+    color: white;
+    &__logo  {
+        font-family: 'Shrikhand';
+        color: white;
+        padding-top: 20px;
+        margin-left: 15px;
+
+    }
+    &__info {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+.bloc-footer__info__top {
+    display: flex;
+    &__icon i {
+        margin-right: 10px;
+        font-size: 0.7em;
+    }
+    &__text {
+        margin-bottom: 10px;
+        
+    }
+    }
+}
+
+.bloc-footer__info__bottom {
+    margin-bottom: 10px;
+}
+

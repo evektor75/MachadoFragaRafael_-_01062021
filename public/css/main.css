@@ -1,11 +1,13 @@
+@charset "UTF-8";
 /*General*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("./public/fonts/Roboto-Regular.ttf");
+  src: url("./public/fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("./public/fonts/Roboto-Medium.ttf");
+  src: url("./public/fonts/Roboto/Roboto-Medium.ttf");
 }
 /*General*/
 body {
@@ -15,12 +17,16 @@ body {
 
 /*HEADER*/
 .bloc-explore__title h1 {
-  font-family: Roboto-Medium;
+  font-family: "Roboto-Medium", sans-serif;
 }
 
 #bloc_page {
   min-width: 375px;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*HEADER*/
@@ -72,19 +78,170 @@ body {
 #bloc-explore__description {
   padding-bottom: 35px;
 }
+#bloc-explore__button {
+  background-color: #9356DC;
+  /*Dégradé de couleurs avec #FF79DA */
+  width: 220px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+#bloc-explore__button__text {
+  color: white;
+  padding-top: 15px;
+}
 
+/*Fonctionnement*/
+.bloc-fonctionnement {
+  margin-top: 45px;
+}
+.bloc-fonctionnement h2 {
+  margin-left: 15px;
+}
+.bloc-fonctionnement__gen {
+  margin-top: 30px;
+}
+.bloc-fonctionnement__bubble {
+  display: flex;
+  margin-bottom: 20px;
+  width: 88%;
+  height: 70px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bloc-fonctionnement__bubble__number {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #9356DC;
+  color: white;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  left: -10px;
+}
+.bloc-fonctionnement__bubble__icon {
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.bloc-fonctionnement__bubble__icon i {
+  font-size: 1.2em;
+}
+.bloc-fonctionnement__bubble__text {
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*Variables couleurs */
+/*Variables couleurs fonds*/
 /*Restaurants*/
+#bloc-restaurants {
+  background-color: #f6f6f6;
+  margin-top: 70px;
+  width: 100%;
+}
+#bloc-restaurants h2 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+}
+
 .bloc-restaurants__box {
   height: 250px;
   width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
 }
 .bloc-restaurants__box__photo {
-  height: 250px;
+  height: 175px;
   width: 335px;
 }
 .bloc-restaurants__box__photo__img img {
-  height: 250px;
+  height: 175px;
   width: 335px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+.bloc-restaurants__box__photo__new {
+  margin-left: 245px;
+  position: relative;
+  top: -170px;
+  background-color: #99E2D0;
+  width: 80px;
+  height: 25px;
+  border-radius: 2px;
+  text-align: center;
+  color: #39a98e;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.bloc-restaurants__box__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.bloc-restaurants__box__heading__legend {
+  margin-left: 10px;
+  padding-bottom: 20px;
+  width: 335px;
+  height: 75px;
+}
+.bloc-restaurants__box__heading__legend__title h3 {
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 1em;
+}
+.bloc-restaurants__box__heading__legend__loc {
+  font-size: 1em;
+}
+.bloc-restaurants__box__heading__icon i {
+  margin-top: 20px;
+  margin-right: 15px;
+  font-size: 1.5em;
+  color: black;
+}
+
+/*FOOTER*/
+#bloc-footer {
+  height: 195px;
+  width: 100%;
+  margin-top: 65px;
+  background-color: #353535;
+  color: white;
+}
+#bloc-footer__logo {
+  font-family: "Shrikhand";
+  color: white;
+  padding-top: 20px;
+  margin-left: 15px;
+}
+#bloc-footer__info {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+#bloc-footer .bloc-footer__info__top {
+  display: flex;
+}
+#bloc-footer .bloc-footer__info__top__icon i {
+  margin-right: 10px;
+  font-size: 0.7em;
+}
+#bloc-footer .bloc-footer__info__top__text {
+  margin-bottom: 10px;
+}
+
+.bloc-footer__info__bottom {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
