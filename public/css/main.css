@@ -27,6 +27,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /*HEADER*/
@@ -243,5 +244,7 @@ a {
 .bloc-footer__info__bottom {
   margin-bottom: 10px;
 }
+
+/*---------------------------------*/
 
 /*# sourceMappingURL=main.css.map */
