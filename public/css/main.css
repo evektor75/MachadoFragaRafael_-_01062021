@@ -1,13 +1,15 @@
 @charset "UTF-8";
 /*General*/
+/*Variables couleurs */
+/*Variables couleurs fonds*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("./public/fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("./public/fonts/Roboto/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
 }
 /*General*/
 body {
@@ -21,6 +23,12 @@ body {
 }
 
 #bloc_page {
+  min-width: 375px;
+  max-width: 1340px;
+  width: 100%;
+}
+
+body, html {
   min-width: 375px;
   width: 100%;
 }
@@ -52,7 +60,7 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 15px;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 #bloc-header2__loc__icon {
   margin-right: 15px;
@@ -75,9 +83,12 @@ a {
   margin: 0;
   padding-top: 40px;
   padding-bottom: 20px;
+  font-size: 2em;
 }
 #bloc-explore__description {
   padding-bottom: 35px;
+  color: #656565;
+  font-size: 1.3em;
 }
 #bloc-explore__button {
   background-color: #9356DC;
@@ -140,8 +151,6 @@ a {
   margin-bottom: auto;
 }
 
-/*Variables couleurs */
-/*Variables couleurs fonds*/
 /*Restaurants*/
 #bloc-restaurants {
   background-color: #f6f6f6;

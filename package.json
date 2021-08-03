@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./sass:public/css"
+    "sass":"sass --watch ./sass:public/css ./sass/pages:public/css/menus.css"
+},
 
-  },
-  "scripts":{
-    "sass":"sass --watch ./sass/pages:public/css/menus.css"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/evektor75/MachadoFragaRafael_-_01062021.git"

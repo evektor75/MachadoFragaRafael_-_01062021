@@ -1,4 +1,3 @@
-$background-color-secondary:#f6f6f6;
 /*Explore*/ 
 #blocExplore {
     height: 290px;
@@ -16,9 +15,12 @@ $background-color-secondary:#f6f6f6;
         margin: 0;
         padding-top: 40px;
         padding-bottom: 20px;
+        font-size: 2em;
     }
     &__description {
         padding-bottom: 35px;
+        color: #656565;
+        font-size: 1.3em;
     }
     &__button {
         background-color: #9356DC; /*Dégradé de couleurs avec #FF79DA */ 
