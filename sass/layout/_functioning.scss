@@ -32,6 +32,10 @@ $background-color-secondary:#f6f6f6;
             margin-bottom: auto;
             position: relative;
             left: -10px;
+            &__text {
+                padding-top: 3px;
+                
+            }
            
             
         }

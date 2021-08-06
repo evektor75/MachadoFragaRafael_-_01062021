@@ -2,19 +2,20 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./public/css/menus.css">
+        <link rel="stylesheet" type="text/css" href="../public/css/menus/mainmenu.css">
         <script src="https://kit.fontawesome.com/dcad651bfd.js" crossorigin="anonymous"></script>
         <title>ohmyfood- La palette du goût</title>
     </head>
     <body>
+    <div id="bloc_page">
         <header>
             <div id="bloc-header1">
-                <div id="bloc-header__return"><a href="index.html"><!-- icone font awesome --></a></a></div>
-                <div id="bloc-header1__logo"><a href="index.html"><img src="public/images/ohmyfood.svg" alt="logo-ohmyfood"></a></div>
+                <div id="bloc-header1__return"><a href="../index.html"><i class="fas fa-arrow-left"></i></a></div>
+                <div id="bloc-header1__logo"><a href="../index.html"><img src="../public/images/ohmyfood.svg" alt="logo-ohmyfood"></a></div>
             </div>
         </header>
         <section id="#bloc-baniere">
-            <div id="bloc-baniere__image"><img src="./public/images/laPaletteDuGout.jpg"></div>
+            <div id="bloc-baniere__image"><img src="../public/images/laPaletteDuGout.jpg"></div>
         </section>
        
        
@@ -22,36 +23,41 @@
         <section id="bloc-menu">
             <div id="bloc-menu__heading">
                 <div id="bloc-menu__heading__name">
-                    La palette du goût 
+                    <h1>La palette du goût</h1>
                 </div>
                 <div id="bloc-menu__heading__icon">
-                    <!-- icone font awesome-->
+                    <i class="far fa-heart"></i>
                 </div>
 
             </div>
             <!--Entrées-->
             <div id="bloc-menu__entrees">
-                <div class="bloc-menu__entrees__title">Entrées</div>
+                <div class="bloc-menu__entrees__title"><h2>Entrées</h2></div>
                 <div class="bloc-menu__entrees__bubble">
-                <div class="bloc-menu__entrees__bubble__meal">
-                    <div class="bloc-menu__entrees__bubble__meal__name">Fricassée d'escargot</div>
-                    <div class="bloc-menu__entrees__bubble__meal__content">Au piment d'Espelette</div>
+                <div class="bloc-menu__entrees__bubble__heading">
+                <div class="bloc-menu__entrees__bubble__heading__meal">
+                    <div class="bloc-menu__entrees__bubble__heading__meal__name">Fricassée d'escargot</div>
+                    <div class="bloc-menu__entrees__bubble__heading__meal__content">Au piment d'Espelette</div>
                 </div>
                 <div class="bloc-menu__entrees__bubble__icon">25€</div>
                 </div>
-
-                <div class="bloc-menu__entrees__bubble">
-                    <div class="bloc-menu__entrees__bubble__meal">
-                        <div class="bloc-menu__entrees__bubble__meal__name">Foie gras de canard mi-cuit</div>
-                        <div class="bloc-menu__entrees__bubble__meal__content">Et ses copeaux de truffe noire</div>
-                    </div>
-                    <div class="bloc-menu__entrees__bubble__icon">35€</div>
                 </div>
 
                 <div class="bloc-menu__entrees__bubble">
-                    <div class="bloc-menu__entrees__bubble__meal">
-                        <div class="bloc-menu__entrees__bubble__meal__name">Oeuf au plat</div>
-                        <div class="bloc-menu__entrees__bubble__meal__content">Assaisonnée à la truffe sur lit de caviar</div>
+                <div class="bloc-menu__entrees__bubble__heading">
+                    <div class="bloc-menu__entrees__bubble__heading__meal">
+                        <div class="bloc-menu__entrees__bubble__heading__meal__name">Foie gras de canard mi-cuit</div>
+                        <div class="bloc-menu__entrees__bubble__heading__meal__content">Et ses copeaux de truffe noire</div>
+                    </div>
+                    <div class="bloc-menu__entrees__bubble__icon">35€</div>
+                </div>
+                </div>
+
+                <div class="bloc-menu__entrees__bubble">
+                <div class="bloc-menu__entrees__bubble__heading">
+                    <div class="bloc-menu__entrees__bubble__heading__meal">
+                        <div class="bloc-menu__entrees__bubble__heading__meal__name">Oeuf au plat</div>
+                        <div class="bloc-menu__entrees__bubble__heading__meal__content">Assaisonnée à la truffe sur lit de caviar</div>
                     </div>
                     <div class="bloc-menu__entrees__bubble__icon">20€</div>
                 </div>
@@ -141,5 +147,6 @@
                 </div>
             </div>
         </footer>
+    </div>
     </body>
 </html>

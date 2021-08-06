@@ -1,0 +1,33 @@
+/*HEADER*/
+
+#bloc-header1 {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content:center;
+    &__return i{
+        margin-right: 65px;
+        margin-top: 22px;
+        font-size: 1.2em;
+        color: $background-color-footer;
+    }
+    &__logo img {
+        margin-top: 15px;
+        
+    }
+}
+
+/*BANNIERE*/ 
+#bloc-baniere{
+    width: 100%;
+    height: 250px;
+    &__image {
+        width: 100%;
+        height: 250px;
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    }
+}

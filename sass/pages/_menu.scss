@@ -1,0 +1,69 @@
+/*MENUS*/
+
+#bloc-menu {
+    width: 100%;
+    height: 1200px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: $background-color-secondary;
+    position: relative;
+    top: -40px;
+    &__heading{
+        display: flex;
+        justify-content: space-around;
+        &__name {
+            
+            font-family: 'Shrikhand', sans-serif;
+        }
+        &__icon i {
+            padding-top: 25px;
+            font-size: 1.5em;
+        }
+    }
+}
+
+#bloc-menu__entrees {
+    margin-left: 20px;
+}
+.bloc-menu__entrees {
+    &__title {
+    width: 35px;
+    height: 25px;
+    border-bottom: 3px solid $underline-color;
+    margin-bottom: 10px;
+    h2 {
+        text-transform: uppercase;
+        color:$text-color;
+        font-weight: normal;
+        font-size: 1.2em;
+        }
+    }
+   
+    &__bubble {
+        width: 350px;
+        height: 70px;
+        margin-bottom: 15px;
+        background-color: $background-color-primary;
+        border:2px solid black;
+        border-radius: 15px;
+        &__heading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        &__meal{
+            margin-left: 10px;
+            &__name{
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+            &__content {
+                margin-top: 5px;
+            }
+        }
+        
+        
+        }
+    }
+}
