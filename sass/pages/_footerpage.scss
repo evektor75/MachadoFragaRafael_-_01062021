@@ -1,10 +1,11 @@
-/*FOOTER*/  
+/*FOOTER Menus*/  
 
 #bloc-footer {
     height: 195px;
     width: 100%;
     background-color: $background-color-footer;
     color: white;
+    position: relative;
     &__logo  {
         font-family: 'Shrikhand';
         color: white;

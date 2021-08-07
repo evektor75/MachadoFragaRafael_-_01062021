@@ -1,0 +1,17 @@
+/*BOUTTON COMMANDER*/ 
+
+#bloc-menu__button {
+    width: 185px;
+    height: 50px;
+    background-color: $primary-color;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+    margin-top: 20px;
+   &__text {
+       padding-top: 14px;
+       text-align: center;
+       color: white;
+   }  
+}

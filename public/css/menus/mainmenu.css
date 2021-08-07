@@ -20,11 +20,11 @@ a {
 
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+  src: url("../../fonts/Roboto/Roboto-Medium.ttf");
 }
 /*General*/
 body {
@@ -70,14 +70,16 @@ body {
 }
 
 /*MENUS*/
+/*ENTREES*/
 #bloc-menu {
   width: 100%;
-  height: 1200px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  margin-top: -40px;
   position: relative;
-  top: -40px;
 }
 #bloc-menu__heading {
   display: flex;
@@ -92,14 +94,15 @@ body {
 }
 
 #bloc-menu__entrees {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .bloc-menu__entrees__title {
   width: 35px;
   height: 25px;
   border-bottom: 3px solid #99e2d0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 3px;
 }
 .bloc-menu__entrees__title h2 {
   text-transform: uppercase;
@@ -112,8 +115,9 @@ body {
   height: 70px;
   margin-bottom: 15px;
   background-color: #ffffff;
-  border: 2px solid black;
   border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bloc-menu__entrees__bubble__heading {
   display: flex;
@@ -131,6 +135,164 @@ body {
 }
 .bloc-menu__entrees__bubble__heading__meal__content {
   margin-top: 5px;
+}
+.bloc-menu__entrees__bubble__icon {
+  margin-top: 35px;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/*PLATS*/
+#bloc-menus__plats {
+  margin-left: 10px;
+}
+
+.bloc-menu__plats__title {
+  width: 35px;
+  height: 25px;
+  border-bottom: 3px solid #99e2d0;
+  margin-bottom: 15px;
+  padding-bottom: 3px;
+}
+.bloc-menu__plats__title h2 {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+.bloc-menu__plats__bubble {
+  width: 350px;
+  height: 70px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bloc-menu__plats__bubble__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.bloc-menu__plats__bubble__heading__meal {
+  margin-left: 10px;
+}
+.bloc-menu__plats__bubble__heading__meal__name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.bloc-menu__plats__bubble__heading__meal__content {
+  margin-top: 5px;
+}
+.bloc-menu__plats__bubble__icon {
+  margin-top: 35px;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/*DESSERT*/
+#bloc-menus__desserts {
+  margin-left: 10px;
+}
+
+.bloc-menu__desserts__title {
+  width: 35px;
+  height: 25px;
+  border-bottom: 3px solid #99e2d0;
+  margin-bottom: 15px;
+  padding-bottom: 3px;
+}
+.bloc-menu__desserts__title h2 {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+.bloc-menu__desserts__bubble {
+  width: 350px;
+  height: 70px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bloc-menu__desserts__bubble__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.bloc-menu__desserts__bubble__heading__meal {
+  margin-left: 10px;
+}
+.bloc-menu__desserts__bubble__heading__meal__name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.bloc-menu__desserts__bubble__heading__meal__content {
+  margin-top: 5px;
+}
+.bloc-menu__desserts__bubble__icon {
+  margin-top: 35px;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/*BOUTTON COMMANDER*/
+#bloc-menu__button {
+  width: 185px;
+  height: 50px;
+  background-color: #9356DC;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 65px;
+  margin-top: 20px;
+}
+#bloc-menu__button__text {
+  padding-top: 14px;
+  text-align: center;
+  color: white;
+}
+
+/*FOOTER Menus*/
+#bloc-footer {
+  height: 195px;
+  width: 100%;
+  background-color: #353535;
+  color: white;
+  position: relative;
+}
+#bloc-footer__logo {
+  font-family: "Shrikhand";
+  color: white;
+  padding-top: 20px;
+  margin-left: 15px;
+}
+#bloc-footer__info {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+#bloc-footer .bloc-footer__info__top {
+  display: flex;
+}
+#bloc-footer .bloc-footer__info__top__icon i {
+  margin-right: 10px;
+  font-size: 0.7em;
+}
+#bloc-footer .bloc-footer__info__top__text {
+  margin-bottom: 10px;
+}
+
+.bloc-footer__info__bottom {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=mainmenu.css.map */

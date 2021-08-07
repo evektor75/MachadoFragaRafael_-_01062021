@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*General*/
 /*Variables couleurs */
 /*Variables couleurs fonds*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
@@ -160,9 +159,6 @@ a {
   background-color: #f6f6f6;
   margin-top: 70px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 65px;
 }
 #bloc-restaurants h2 {
   padding-top: 40px;
@@ -235,6 +231,7 @@ a {
 #bloc-footer {
   height: 195px;
   width: 100%;
+  margin-top: 65px;
   background-color: #353535;
   color: white;
 }
@@ -263,6 +260,4 @@ a {
   margin-bottom: 10px;
 }
 
-/*---------------------------------*/
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=mainindex.css.map */

@@ -4,6 +4,9 @@
     background-color: $background-color-secondary;
     margin-top: 70px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 65px;
     h2 {
         padding-top: 40px;
         padding-bottom: 10px ;
