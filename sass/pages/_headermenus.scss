@@ -6,7 +6,8 @@
     display: flex;
     justify-content:center;
     &__return i{
-        margin-right: 65px;
+        position: absolute;
+        left: 25px;
         margin-top: 22px;
         font-size: 1.2em;
         color: $background-color-footer;

@@ -45,7 +45,8 @@ body {
   justify-content: center;
 }
 #bloc-header1__return i {
-  margin-right: 65px;
+  position: absolute;
+  left: 25px;
   margin-top: 22px;
   font-size: 1.2em;
   color: #353535;
@@ -253,8 +254,8 @@ body {
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 65px;
-  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-top: 50px;
 }
 #bloc-menu__button__text {
   padding-top: 14px;
