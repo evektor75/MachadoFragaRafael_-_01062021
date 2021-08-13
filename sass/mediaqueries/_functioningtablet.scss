@@ -1,0 +1,58 @@
+/*Fonctionnement*/  
+
+.bloc-fonctionnement {
+    margin-top: 45px;
+    h2 {
+     margin-left: 15px;
+    }
+    &__gen {
+        margin-top: 30px;
+    }
+    &__bubble {
+        display: flex;
+        margin-bottom: 20px;
+        width: 320px;
+        height: 70px;
+        background-color: $background-color-secondary;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        &__number {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $primary-color;
+            color: white;
+            margin-right: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+            position: relative;
+            left: -10px;
+            &__text {
+                padding-top: 3px;
+                
+            }
+           
+            
+        }
+        &__icon {
+            margin-right: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+            i {
+                font-size: 1.2em;
+               
+            }
+
+        }
+       
+        &__text {
+            font-weight: bold;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        
+    }
+}

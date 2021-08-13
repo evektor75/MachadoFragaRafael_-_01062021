@@ -1,3 +1,4 @@
+@media all and (min-width:375px) and (max-width:775px){
 @import "../utils/variables";
 @import "../utils/variablesmenus";
 @import "../base/bloc";
@@ -6,3 +7,4 @@
 @import "../pages/menu";
 @import "../pages/_button";
 @import "../pages/footerpage";
+}
