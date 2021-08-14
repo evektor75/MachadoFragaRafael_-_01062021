@@ -1,3 +1,5 @@
+/*Version Mobile*/
+
 @media all and (min-width:375px) and (max-width:775px){
 @import "../utils/variables";
 @import "../utils/variablesmenus";
@@ -7,4 +9,18 @@
 @import "../pages/menu";
 @import "../pages/_button";
 @import "../pages/footerpage";
+}
+
+/*Version Tablet*/
+
+@media all and (min-width:775px) and (max-width:1340px){
+@import "../utils/variables";
+@import "../utils/variablesmenus";
+@import "../base/bloc";
+@import "../pages/fontpage";
+@import "../pages/headermenus";
+@import "../pages/mediaqueries/menutablet";
+@import "../pages/_button";
+@import "../mediaqueries/footertablet";
+
 }

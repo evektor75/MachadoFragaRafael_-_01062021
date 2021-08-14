@@ -1,3 +1,4 @@
+/*Version Mobile*/
 @media all and (min-width: 375px) and (max-width: 775px) {
   /*Variables couleurs */
   /*Variables couleurs fonds*/
@@ -25,7 +26,10 @@
     font-family: "Roboto-Medium";
     src: url("../../fonts/Roboto/Roboto-Medium.ttf");
   }
-  @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+  @font-face {
+    font-family: "Shrikhand-regular";
+    src: url("../../public/fonts/Shrikhand/Shrikhand-Regular.ttf");
+  }
   /*General*/
   body {
     font-family: "Roboto-Regular", sans-serif;
@@ -272,7 +276,7 @@
     position: relative;
   }
   #bloc-footer__logo {
-    font-family: "Shrikhand";
+    font-family: "Shrikhand-regular";
     color: white;
     padding-top: 20px;
     margin-left: 15px;
@@ -280,6 +284,310 @@
   #bloc-footer__info {
     margin-left: 15px;
     margin-top: 15px;
+  }
+  #bloc-footer .bloc-footer__info__top {
+    display: flex;
+  }
+  #bloc-footer .bloc-footer__info__top__icon i {
+    margin-right: 10px;
+    font-size: 0.7em;
+  }
+  #bloc-footer .bloc-footer__info__top__text {
+    margin-bottom: 10px;
+  }
+
+  .bloc-footer__info__bottom {
+    margin-bottom: 10px;
+  }
+}
+/*Version Tablet*/
+@media all and (min-width: 775px) and (max-width: 1340px) {
+  /*Variables couleurs */
+  /*Variables couleurs fonds*/
+  /*COLOR MENUS*/
+  #bloc_page {
+    min-width: 375px;
+    width: 100%;
+  }
+
+  body, html {
+    min-width: 375px;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url("../../fonts/Roboto/Roboto-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Medium";
+    src: url("../../fonts/Roboto/Roboto-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Shrikhand-regular";
+    src: url("../../public/fonts/Shrikhand/Shrikhand-Regular.ttf");
+  }
+  /*General*/
+  body {
+    font-family: "Roboto-Regular", sans-serif;
+    margin: 0;
+  }
+
+  /*HEADER*/
+  .bloc-explore__title h1 {
+    font-family: "Roboto-Medium", sans-serif;
+  }
+
+  /*HEADER*/
+  #bloc-header1 {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+  }
+  #bloc-header1__return i {
+    position: absolute;
+    left: 25px;
+    margin-top: 22px;
+    font-size: 1.2em;
+    color: #353535;
+  }
+  #bloc-header1__logo img {
+    margin-top: 15px;
+  }
+
+  /*BANNIERE*/
+  #bloc-baniere {
+    width: 100%;
+    height: 250px;
+  }
+  #bloc-baniere__image {
+    width: 100%;
+    height: 250px;
+  }
+  #bloc-baniere__image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  /*MENUS*/
+  /*ENTREES*/
+  #bloc-menu {
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+    position: relative;
+  }
+  #bloc-menu__heading {
+    display: flex;
+    justify-content: space-around;
+  }
+  #bloc-menu__heading__name {
+    font-family: "Shrikhand", sans-serif;
+  }
+  #bloc-menu__heading__icon i {
+    padding-top: 25px;
+    font-size: 1.5em;
+  }
+
+  #bloc-menu__entrees {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bloc-menu__entrees__title {
+    width: 35px;
+    height: 25px;
+    border-bottom: 3px solid #99e2d0;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+  }
+  .bloc-menu__entrees__title h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: normal;
+    font-size: 1.2em;
+  }
+  .bloc-menu__entrees__bubble {
+    width: 350px;
+    height: 70px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bloc-menu__entrees__bubble__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .bloc-menu__entrees__bubble__heading__meal {
+    margin-left: 10px;
+  }
+  .bloc-menu__entrees__bubble__heading__meal__name {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .bloc-menu__entrees__bubble__heading__meal__content {
+    margin-top: 5px;
+  }
+  .bloc-menu__entrees__bubble__icon {
+    margin-top: 35px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  /*PLATS*/
+  #bloc-menus__plats {
+    margin-left: 10px;
+  }
+
+  .bloc-menu__plats__title {
+    width: 35px;
+    height: 25px;
+    border-bottom: 3px solid #99e2d0;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+  }
+  .bloc-menu__plats__title h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: normal;
+    font-size: 1.2em;
+  }
+  .bloc-menu__plats__bubble {
+    width: 350px;
+    height: 70px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bloc-menu__plats__bubble__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .bloc-menu__plats__bubble__heading__meal {
+    margin-left: 10px;
+  }
+  .bloc-menu__plats__bubble__heading__meal__name {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .bloc-menu__plats__bubble__heading__meal__content {
+    margin-top: 5px;
+  }
+  .bloc-menu__plats__bubble__icon {
+    margin-top: 35px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  /*DESSERT*/
+  #bloc-menus__desserts {
+    margin-left: 10px;
+  }
+
+  .bloc-menu__desserts__title {
+    width: 35px;
+    height: 25px;
+    border-bottom: 3px solid #99e2d0;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+  }
+  .bloc-menu__desserts__title h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: normal;
+    font-size: 1.2em;
+  }
+  .bloc-menu__desserts__bubble {
+    width: 350px;
+    height: 70px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bloc-menu__desserts__bubble__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .bloc-menu__desserts__bubble__heading__meal {
+    margin-left: 10px;
+  }
+  .bloc-menu__desserts__bubble__heading__meal__name {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .bloc-menu__desserts__bubble__heading__meal__content {
+    margin-top: 5px;
+  }
+  .bloc-menu__desserts__bubble__icon {
+    margin-top: 35px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  /*BOUTTON COMMANDER*/
+  #bloc-menu__button {
+    width: 185px;
+    height: 50px;
+    background-color: #9356DC;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-top: 50px;
+  }
+  #bloc-menu__button__text {
+    padding-top: 14px;
+    text-align: center;
+    color: white;
+  }
+
+  /*FOOTER*/
+  #bloc-footer {
+    height: 195px;
+    width: 100%;
+    background-color: #353535;
+    color: white;
+  }
+  #bloc-footer__logo {
+    font-family: "Shrikhand-regular";
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+  }
+  #bloc-footer__info {
+    margin-left: 15px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
   }
   #bloc-footer .bloc-footer__info__top {
     display: flex;
