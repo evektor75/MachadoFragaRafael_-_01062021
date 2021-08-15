@@ -7,7 +7,10 @@
     src: url('../../fonts/Roboto/Roboto-Medium.ttf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@font-face {
+    font-family: 'Shrikhand-Regular';
+    src: url('../../fonts/Shrikhand/Shrikhand-Regular.ttf');
+};
 
 /*General*/
 body {

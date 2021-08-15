@@ -1,13 +1,16 @@
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    src: url('../../fonts/Roboto/Roboto-Regular.ttf');
 }
 @font-face {
     font-family: 'Roboto-Medium';
-    src: url('../fonts/Roboto/Roboto-Medium.ttf');
+    src: url('../../fonts/Roboto/Roboto-Medium.ttf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@font-face {
+    font-family: 'Shrikhand-regular';
+    src: url('../../fonts/Shrikhand/Shrikhand-Regular.ttf');
+};
 
 /*General*/
 body {
