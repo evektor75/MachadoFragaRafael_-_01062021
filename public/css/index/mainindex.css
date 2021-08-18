@@ -13,6 +13,10 @@
   font-family: "Shrikhand-regular";
   src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
+@font-face {
+  font-family: "Shrikhand-regular";
+  src: url("../../public/fonts/Shrikhand/Shrikhand-Regular.ttf");
+}
 /*General*/
 body {
   font-family: "Roboto-Regular", sans-serif;
