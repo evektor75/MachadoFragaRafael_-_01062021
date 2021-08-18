@@ -1,5 +1,7 @@
 /*MENUS*/
-
+#bloc-menu--flex {
+    margin-left: 10px;
+}
 /*ENTREES*/ 
 #bloc-menu {
     width: 100%;
@@ -24,9 +26,6 @@
     }
 }
 
-#bloc-menu__entrees {
-    margin-left: 10px;
-}
 .bloc-menu__entrees {
     &__title {
     width: 35px;

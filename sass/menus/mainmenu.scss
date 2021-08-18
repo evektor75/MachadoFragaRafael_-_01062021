@@ -24,3 +24,15 @@
 @import "../mediaqueries/footertablet";
   
 }
+
+/*Version Desktop */
+@media all and (min-width:1340px) {
+@import "../utils/variables";
+@import "../utils/variablesmenus";
+@import "../base/bloc";
+@import "../pages/fontpage";
+@import "../pages/headermenus";
+@import "../pages/mediaqueries/menudesktop";
+@import "../pages/_button";
+@import "../mediaqueries/footertablet";
+}

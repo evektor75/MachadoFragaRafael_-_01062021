@@ -1,7 +1,8 @@
 /*MENUS*/
 #bloc-menu--flex {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
 }
 /*ENTREES*/ 
 #bloc-menu {
@@ -27,10 +28,7 @@
     }
 }
 
-#bloc-menu__entrees {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .bloc-menu__entrees {
     &__title {
     width: 35px;
@@ -43,8 +41,6 @@
         color:$text-color;
         font-weight: normal;
         font-size: 1.2em;
-        margin-left: auto;
-        margin-right: auto;
         }
     }
    
