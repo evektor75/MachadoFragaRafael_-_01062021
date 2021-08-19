@@ -9,16 +9,16 @@
         font-family: 'Shrikhand-regular';
         color: white;
         padding-top: 20px;
-        margin-left: 15px;
+        margin-left: 25px;
 
     }
     &__info {
-        margin-left: 15px;
+        margin-left: 25px;
         margin-top: 15px;
     }
 .bloc-footer__info__top {
     display: flex;
-    &__icon i {
+    &__icon a i {
         margin-right: 10px;
         font-size: 0.7em;
     }
@@ -27,7 +27,11 @@
         
     }
     }
+    a {
+        color: white;
+    }
 }
+
 
 .bloc-footer__info__bottom {
     margin-bottom: 10px;

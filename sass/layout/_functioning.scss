@@ -20,6 +20,13 @@ $background-color-secondary:#f6f6f6;
         border-radius: 25px;
         margin-left: auto;
         margin-right: auto;
+        transform: scale(1);
+        transition-property: transform;
+        &:hover {
+            transform: scale(1.10);
+            background: #f5edff;
+            color: $primary-color;
+        }
         &__number {
             width: 25px;
             height: 25px;
@@ -43,7 +50,6 @@ $background-color-secondary:#f6f6f6;
             margin-right: 20px;
             margin-top: auto;
             margin-bottom: auto;
-            
             i {
                 font-size: 1.2em;
                
@@ -56,6 +62,5 @@ $background-color-secondary:#f6f6f6;
             margin-top: auto;
             margin-bottom: auto;
         }
-        
     }
 }
