@@ -23,17 +23,24 @@
         font-size: 1.2em;
     }
     &__button {
-        background: linear-gradient(to bottom right,$secondary-color,$primary-color);
-        box-shadow: 1px 1px 5px #656565;
+        background-image: linear-gradient(to bottom right,$secondary-color,$primary-color);
+        background-color: rgb(104, 104, 104);
+        box-shadow: 0.25rem 0.25rem 10px rgba( 0,0,0,0.25);
         width: 220px;
         height: 50px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 25px;
+        transition-duration: 2ms;
+        cursor: pointer;
         &__text {
             color: white;
             padding-top:15px;
             font-size: 1.05em;
+        }
+        &:hover {
+            background-color: white;
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
         }
     }
 }

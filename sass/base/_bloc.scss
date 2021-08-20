@@ -14,3 +14,66 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+    animation: loader 0.01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    &__bloc{
+        width: 30px;
+        height: 60px;
+        margin-right: 15px;
+        animation:jump 1s;
+        animation-iteration-count:2;
+        &Entier{
+            display: flex;
+        }
+        &--1 {
+            background-color: $primary-color;
+           
+        }
+        &--2 {
+            background-color: $secondary-color;
+            animation-delay: 0.2s;
+        }
+        &--3 {
+            background-color: $tertiary-color;
+            animation-delay: 0.4s;
+        }
+    }
+    
+   
+}
+
+@keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  } 
+
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(0.5rem);
+    }
+    75% {
+      transform: translateY(-0.5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

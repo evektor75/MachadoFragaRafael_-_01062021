@@ -16,6 +16,9 @@
     &__info {
         margin-left: 25px;
         margin-top: 15px;
+        a:hover {
+            text-decoration: underline; 
+         }
     }
 .bloc-footer__info__top {
     display: flex;

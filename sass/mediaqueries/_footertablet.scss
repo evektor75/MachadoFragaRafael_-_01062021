@@ -17,6 +17,9 @@
         margin-top: 125px;
         display: flex;
         justify-content: space-around;
+        a:hover {
+            text-decoration: underline; 
+         }
     }
 .bloc-footer__info__top {
     display: flex;
