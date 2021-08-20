@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Version mobile*/
 @media all and (min-width: 320px) and (max-width: 775px) {
   /*Variables couleurs */
@@ -44,8 +45,6 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
     background-color: rgba(255, 255, 255, 0.9);
     animation: loader 0.01s;
     animation-delay: 1.75s;
@@ -198,6 +197,8 @@
   .bloc-fonctionnement__bubble:hover {
     transform: scale(1.1);
     background: #f5edff;
+  }
+  .bloc-fonctionnement__bubble:hover .bloc-fonctionnement__bubble__icon {
     color: #9356DC;
   }
   .bloc-fonctionnement__bubble__number {
@@ -304,9 +305,58 @@
     margin-right: 15px;
     font-size: 1.5em;
   }
-  .bloc-restaurants__box__heading__icon i:hover {
-    font-weight: bold;
-    color: #9356DC;
+
+  @keyframes fill {
+    0% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .heart-icon-full:hover {
+    animation: fill 2000ms forwards;
+  }
+
+  .heart-icon-empty:hover {
+    opacity: 0;
+  }
+
+  .heart-icon-empty {
+    transform: scale(1);
+    font-size: 30px;
+    opacity: 1;
+  }
+
+  /*heart-icon-full*/
+  .heart-icon-full {
+    transition: transform 800ms ease-in-out;
+    font-size: 30px;
+    background-image: linear-gradient(-10deg, #9356dc, #ff79da);
+    /*background-clip: text;*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    visibility: visible;
+    opacity: 0;
+    position: relative;
+    top: -44.5px;
+    font-size: 1.5em;
+  }
+
+  .fa-heart:before {
+    content: "";
   }
 
   /*FOOTER*/
@@ -394,8 +444,6 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
     background-color: rgba(255, 255, 255, 0.9);
     animation: loader 0.01s;
     animation-delay: 1.75s;
@@ -753,8 +801,6 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
     background-color: rgba(255, 255, 255, 0.9);
     animation: loader 0.01s;
     animation-delay: 1.75s;

@@ -25,6 +25,9 @@ $background-color-secondary:#f6f6f6;
         &:hover {
             transform: scale(1.10);
             background: #f5edff;
+            
+        }
+        &:hover .bloc-fonctionnement__bubble__icon{
             color: $primary-color;
         }
         &__number {
