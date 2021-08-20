@@ -318,6 +318,7 @@
     font-size: 0.9em;
   }
 
+  /*ANIMATIONS*/
   .bloc-menu__entrees__bubble__check {
     background: #99E2D0;
     width: 60px;
@@ -329,7 +330,7 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 55ms;
+    transition-duration: 60ms;
     opacity: 0;
   }
   .bloc-menu__entrees__bubble:hover .bloc-menu__entrees__bubble__check {
@@ -347,7 +348,7 @@
     justify-content: center;
     border-radius: 100px;
     transform: rotate(-180deg);
-    transition-duration: 0.5s;
+    transition-duration: 0.6s;
   }
 
   .bloc-menu__entrees__bubble:hover .bloc-menu__entrees__bubble__check__icon {

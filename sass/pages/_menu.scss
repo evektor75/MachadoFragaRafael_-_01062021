@@ -206,6 +206,8 @@
     }
 }
 
+
+/*ANIMATIONS*/
 .bloc-menu__entrees__bubble {
     &__check{
     background: $tertiary-color;
@@ -218,7 +220,7 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 55ms;
+    transition-duration: 60ms;
     opacity: 0;
     }
 
@@ -240,7 +242,7 @@
     justify-content: center;
     border-radius: 100px;
     transform: rotate(-180deg);
-    transition-duration: 0.5s;
+    transition-duration: 0.6s;
 }
 
 .bloc-menu__entrees__bubble:hover .bloc-menu__entrees__bubble__check__icon{
