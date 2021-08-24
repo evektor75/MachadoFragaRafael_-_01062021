@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Variables couleurs */
 /*Variables couleurs fonds*/
 @font-face {
@@ -42,8 +43,6 @@ a {
   position: fixed;
   height: 100%;
   width: 100%;
-  left: 0;
-  top: 0;
   background-color: rgba(255, 255, 255, 0.9);
   animation: loader 0.01s;
   animation-delay: 1.75s;
@@ -150,7 +149,7 @@ a {
   font-size: 1.2em;
 }
 #bloc-explore__button {
-  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   background-color: #686868;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   width: 220px;
@@ -160,6 +159,7 @@ a {
   border-radius: 25px;
   transition-duration: 2ms;
   cursor: pointer;
+  border: 0;
 }
 #bloc-explore__button__text {
   color: white;
@@ -196,6 +196,8 @@ a {
 .bloc-fonctionnement__bubble:hover {
   transform: scale(1.1);
   background: #f5edff;
+}
+.bloc-fonctionnement__bubble:hover .bloc-fonctionnement__bubble__icon {
   color: #9356DC;
 }
 .bloc-fonctionnement__bubble__number {
@@ -300,11 +302,61 @@ a {
 .bloc-restaurants__box__heading__icon i {
   margin-top: 20px;
   margin-right: 15px;
+}
+
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.heart-icon-full:hover {
+  animation: fill 0.3s forwards;
+}
+
+.heart-icon-empty:hover {
+  opacity: 0;
+}
+
+.heart-icon-empty {
+  font-size: 1.5em;
+  opacity: 1;
+  position: absolute;
+}
+
+/*heart-icon-full*/
+.heart-icon-full {
+  transition: transform 800ms ease-in-out;
+  background-image: linear-gradient(-10deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  visibility: visible;
+  opacity: 0;
   font-size: 1.5em;
 }
-.bloc-restaurants__box__heading__icon i:hover {
-  font-weight: bold;
-  color: #9356DC;
+
+.fa-heart:before {
+  content: "";
 }
 
 /*FOOTER*/

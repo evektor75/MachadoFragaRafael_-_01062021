@@ -22,8 +22,6 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
     background-color: rgba(255, 255, 255, 0.9);
     animation: loader 0.01s;
     animation-delay: 1.75s;
@@ -203,9 +201,11 @@
   }
   .bloc-menu__entrees__bubble__icon {
     margin-top: 35px;
-    margin-right: 20px;
+    margin-right: 25px;
     font-weight: bold;
     font-size: 0.9em;
+    position: relative;
+    right: -40px;
   }
 
   /*PLATS*/
@@ -355,6 +355,78 @@
     transform: rotate(0);
   }
 
+  .bloc-menu__plats__bubble__check {
+    background: #99E2D0;
+    width: 60px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1rem -5rem -1rem 1rem;
+    transition-duration: 60ms;
+    opacity: 0;
+  }
+  .bloc-menu__plats__bubble:hover .bloc-menu__plats__bubble__check {
+    margin-right: -1rem;
+    opacity: 1;
+  }
+  .bloc-menu__plats__bubble i {
+    font-size: 1.5em;
+    color: white;
+  }
+
+  .bloc-menu__plats__bubble__check__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(-180deg);
+    transition-duration: 0.6s;
+  }
+
+  .bloc-menu__plats__bubble:hover .bloc-menu__plats__bubble__check__icon {
+    transform: rotate(0);
+  }
+
+  .bloc-menu__desserts__bubble__check {
+    background: #99E2D0;
+    width: 60px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1rem -5rem -1rem 1rem;
+    transition-duration: 60ms;
+    opacity: 0;
+  }
+  .bloc-menu__desserts__bubble:hover .bloc-menu__desserts__bubble__check {
+    margin-right: -1rem;
+    opacity: 1;
+  }
+  .bloc-menu__desserts__bubble i {
+    font-size: 1.5em;
+    color: white;
+  }
+
+  .bloc-menu__desserts__bubble__check__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(-180deg);
+    transition-duration: 0.6s;
+  }
+
+  .bloc-menu__desserts__bubble:hover .bloc-menu__desserts__bubble__check__icon {
+    transform: rotate(0);
+  }
+
   @keyframes menu-apparition {
     0% {
       transform: scale(0);
@@ -482,8 +554,6 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
     background-color: rgba(255, 255, 255, 0.9);
     animation: loader 0.01s;
     animation-delay: 1.75s;
@@ -858,8 +928,6 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
     background-color: rgba(255, 255, 255, 0.9);
     animation: loader 0.01s;
     animation-delay: 1.75s;
