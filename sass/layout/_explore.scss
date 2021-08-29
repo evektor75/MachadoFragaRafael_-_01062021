@@ -40,7 +40,8 @@
             font-size: 1.05em;
         }
         &:hover {
-            background-color: white;
+            background-image: linear-gradient(-10deg, #a16be0, #ff93e1);
+
             box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
         }
     }

@@ -3,18 +3,25 @@
 #bloc-menu__button {
     width: 185px;
     height: 50px;
-    background-color: $primary-color;
+    background-color: #686868;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
     margin-top: 50px;
     background: linear-gradient(to bottom right,$secondary-color,$primary-color);
-    box-shadow: 1px 1px 5px #656565;
+    box-shadow: 0.25rem 0.25rem 10px rgba( 0,0,0,0.25);
+    border: 0;
+    transition-duration: 2ms;
    &__text {
        padding-top: 14px;
        text-align: center;
        color: white;
    }  
+   &:hover {
+    background-image: linear-gradient(-10deg, #a16be0, #ff93e1);
+
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
 
 }

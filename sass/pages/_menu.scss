@@ -28,6 +28,7 @@
     }
 }
 
+
 .bloc-menu__entrees {
     &__title {
     width: 35px;
@@ -62,12 +63,23 @@
             height: 100%;
         &__meal{
             margin-left: 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
             &__name{
                 font-weight: bold;
                 font-size: 1.1em;
+                white-space: nowrap;
+                 text-overflow: ellipsis;
+                overflow: hidden;
+                margin-top: 5px;
             }
             &__content {
                 margin-top: 5px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font-size: 15px;
             }
         }
         
@@ -75,11 +87,10 @@
         }
         &__icon{
             margin-top: 35px;
-            margin-right: 25px;
+            margin-left: auto;
+            margin-right: 20px;
             font-weight: bold;
             font-size: 0.9em;
-            position: relative;
-            right: -40px;
         }
     }
 }
@@ -117,18 +128,29 @@
         animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
         &__heading{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             width: 100%;
             height: 100%;
         &__meal{
             margin-left: 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
             &__name{
                 font-weight: bold;
                 font-size: 1.1em;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin-top: 5px;
             }
             &__content {
                 margin-top: 5px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font-size: 15px;
             }
         }
         
@@ -136,6 +158,7 @@
         }
         &__icon{
             margin-top: 35px;
+            margin-left: auto;
             margin-right: 20px;
             font-weight: bold;
             font-size: 0.9em;
@@ -176,30 +199,38 @@
         animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
         &__heading{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             width: 100%;
             height: 100%;
         &__meal{
             margin-left: 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
             &__name{
                 font-weight: bold;
                 font-size: 1.1em;
+                white-space: nowrap;
+                text-overflow: ellipsis;
                 overflow: hidden;
+                margin-top: 5px;
             }
             &__content {
                 margin-top: 5px;
-                overflow: hidden;
+                white-space: nowrap;
                 text-overflow: ellipsis;
+                overflow: hidden;
+                font-size: 15px;
             }
         }
         
         
         }
         &__icon{
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
+            margin-top: 35px;
+            margin-left: auto;
+            margin-right: 20px;
             font-weight: bold;
             font-size: 0.9em;
         }
@@ -210,6 +241,66 @@
 
 
 /*ANIMATIONS*/
+
+/*Coeur*/
+@keyframes fill {
+    0% {
+        opacity: 0.1
+    }
+    20% {
+        opacity: 0.2
+    }
+    40% {
+        opacity: 0.4
+    }
+    60% {
+        opacity: 0.6
+    }
+    80% {
+        opacity: 0.8
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#bloc-menu__heading__icon:hover {
+    .heart-icon-full {
+        animation: fill 0.3s forwards;
+        
+    }
+.heart-icon-empty {
+        opacity: 0;
+    }
+}
+
+
+
+
+.heart-icon-empty {
+    font-size: 1.5em;
+    opacity: 1;
+    position: absolute;
+}
+/*heart-icon-full*/
+
+.heart-icon-full {
+    transition: transform 800ms ease-in-out;
+    background-image: linear-gradient(-10deg, #9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    visibility: visible;
+    opacity: 0;
+    font-size: 1.5em;
+   
+}
+
+.fa-heart:before {
+    content: "\f004";
+}
+/*-----------*/
+
+
 .bloc-menu__entrees__bubble {
     &__check{
     background: $tertiary-color;
@@ -222,12 +313,15 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 60ms;
-    opacity: 0;
+    transition-duration: 50ms;
+    position: relative;
+    left: -70px;
+   opacity: 0;
     }
 
     .bloc-menu__entrees__bubble:hover &__check{
         margin-right: -1rem;
+        position: initial;
         opacity: 1;
     }
     
@@ -250,25 +344,32 @@
 .bloc-menu__entrees__bubble:hover .bloc-menu__entrees__bubble__check__icon{
     transform: rotate(0);
 }
+.bloc-menu__entrees__bubble:hover .bloc-menu__entrees__bubble__icon {
+    margin-right: 0;
+}
+
 
 .bloc-menu__plats__bubble {
     &__check{
-    background: $tertiary-color;
-    width: 60px;
-    height: 100%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius:15px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 60ms;
-    opacity: 0;
+        background: $tertiary-color;
+        width: 60px;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius:15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -1rem -5rem -1rem 1rem;
+        transition-duration: 50ms;
+        position: relative;
+        left: -70px;
+       opacity: 0;
     }
 
     .bloc-menu__plats__bubble:hover &__check{
         margin-right: -1rem;
+        position: initial;
         opacity: 1;
     }
     
@@ -278,6 +379,12 @@
     }
 
 }
+.bloc-menu__plats__bubble:hover{
+    .bloc-menu__plats__bubble__icon {
+    margin-right: 0;
+    }
+
+} 
 
 .bloc-menu__plats__bubble__check__icon {
     display: flex;
@@ -295,24 +402,28 @@
 
 .bloc-menu__desserts__bubble {
     &__check{
-    background: $tertiary-color;
-    width: 60px;
-    height: 100%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius:15px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 60ms;
-    opacity: 0;
+        background: $tertiary-color;
+        width: 60px;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius:15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -1rem -5rem -1rem 1rem;
+        transition-duration: 50ms;
+        position: relative;
+        left: -70px;
+       opacity: 0;
     }
 
-    .bloc-menu__desserts__bubble:hover &__check{
+    .bloc-menu__desserts__bubble:hover &__check {
         margin-right: -1rem;
+        position: initial;
         opacity: 1;
     }
+    
     
     i {
         font-size: 1.5em;
@@ -333,6 +444,10 @@
 .bloc-menu__desserts__bubble:hover .bloc-menu__desserts__bubble__check__icon{
     transform: rotate(0);
 }
+.bloc-menu__desserts__bubble:hover .bloc-menu__desserts__bubble__icon {
+    margin-right: 0;
+}
+
 @keyframes menu-apparition {
     0% {
         transform: scale(0)
