@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Version Mobile*/
-@media all and (min-width: 375px) and (max-width: 775px) {
+@media all and (max-width: 775px) {
   /*Variables couleurs */
   /*Variables couleurs fonds*/
   /*COLOR MENUS*/
@@ -172,7 +172,7 @@
     font-size: 1.2em;
   }
   .bloc-menu__entrees__bubble {
-    width: 350px;
+    width: 90%;
     height: 70px;
     margin-bottom: 15px;
     background-color: #ffffff;
@@ -185,7 +185,7 @@
   }
   .bloc-menu__entrees__bubble__heading {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -214,9 +214,9 @@
   .bloc-menu__entrees__bubble__icon {
     margin-top: 35px;
     margin-left: auto;
-    margin-right: 20px;
     font-weight: bold;
     font-size: 0.9em;
+    padding-left: 1rem;
   }
 
   /*PLATS*/
@@ -238,7 +238,7 @@
     font-size: 1.2em;
   }
   .bloc-menu__plats__bubble {
-    width: 350px;
+    width: 90%;
     height: 70px;
     margin-bottom: 15px;
     background-color: #ffffff;
@@ -279,9 +279,9 @@
   .bloc-menu__plats__bubble__icon {
     margin-top: 35px;
     margin-left: auto;
-    margin-right: 20px;
     font-weight: bold;
     font-size: 0.9em;
+    padding-left: 1rem;
   }
 
   /*DESSERT*/
@@ -303,7 +303,7 @@
     font-size: 1.2em;
   }
   .bloc-menu__desserts__bubble {
-    width: 350px;
+    width: 90%;
     height: 70px;
     margin-bottom: 15px;
     background-color: #ffffff;
@@ -344,9 +344,9 @@
   .bloc-menu__desserts__bubble__icon {
     margin-top: 35px;
     margin-left: auto;
-    margin-right: 20px;
     font-weight: bold;
     font-size: 0.9em;
+    padding-left: 1rem;
   }
 
   /*ANIMATIONS*/
@@ -402,7 +402,7 @@
   /*-----------*/
   .bloc-menu__entrees__bubble__check {
     background: #99E2D0;
-    width: 60px;
+    width: 10px;
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -410,16 +410,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
-    position: relative;
-    left: -70px;
+    margin-left: 1rem;
+    margin-right: -0.5rem;
+    transition-duration: 0.5s;
     opacity: 0;
   }
+  .bloc-menu__entrees__bubble__check__icon i {
+    width: 0;
+  }
   .bloc-menu__entrees__bubble:hover .bloc-menu__entrees__bubble__check {
-    margin-right: -1rem;
-    position: initial;
+    margin-right: -0.2rem;
     opacity: 1;
+    width: 60px;
+  }
+  .bloc-menu__entrees__bubble:hover .bloc-menu__entrees__bubble__check__icon i {
+    width: auto;
   }
   .bloc-menu__entrees__bubble i {
     font-size: 1.5em;
@@ -445,7 +450,7 @@
 
   .bloc-menu__plats__bubble__check {
     background: #99E2D0;
-    width: 60px;
+    width: 10px;
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -453,16 +458,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
-    position: relative;
-    left: -70px;
+    margin-left: 1rem;
+    margin-right: -0.5rem;
+    transition-duration: 0.5s;
     opacity: 0;
   }
+  .bloc-menu__plats__bubble__check__icon i {
+    width: 0;
+  }
   .bloc-menu__plats__bubble:hover .bloc-menu__plats__bubble__check {
-    margin-right: -1rem;
-    position: initial;
+    margin-right: -0.2rem;
     opacity: 1;
+    width: 60px;
+  }
+  .bloc-menu__plats__bubble:hover .bloc-menu__plats__bubble__check__icon i {
+    width: auto;
   }
   .bloc-menu__plats__bubble i {
     font-size: 1.5em;
@@ -488,7 +498,7 @@
 
   .bloc-menu__desserts__bubble__check {
     background: #99E2D0;
-    width: 60px;
+    width: 10px;
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -496,16 +506,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
-    position: relative;
-    left: -70px;
+    margin-left: 1rem;
+    margin-right: -0.5rem;
+    transition-duration: 0.5s;
     opacity: 0;
   }
+  .bloc-menu__desserts__bubble__check__icon i {
+    width: 0;
+  }
   .bloc-menu__desserts__bubble:hover .bloc-menu__desserts__bubble__check {
-    margin-right: -1rem;
-    position: initial;
+    margin-right: -0.2rem;
     opacity: 1;
+    width: 60px;
+  }
+  .bloc-menu__desserts__bubble:hover .bloc-menu__desserts__bubble__check__icon i {
+    width: auto;
   }
   .bloc-menu__desserts__bubble i {
     font-size: 1.5em;
@@ -870,6 +885,7 @@
     margin-right: 20px;
     font-weight: bold;
     font-size: 0.9em;
+    padding-left: 1rem;
   }
 
   /*PLATS*/
@@ -935,6 +951,7 @@
     margin-right: 20px;
     font-weight: bold;
     font-size: 0.9em;
+    padding-left: 1rem;
   }
 
   /*DESSERT*/
@@ -1000,6 +1017,7 @@
     margin-right: 20px;
     font-weight: bold;
     font-size: 0.9em;
+    padding-left: 1rem;
   }
 
   /*ANIMATIONS*/
@@ -1064,7 +1082,7 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
+    transition-duration: 0.5s;
     position: relative;
     left: -70px;
     opacity: 0;
@@ -1107,7 +1125,7 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
+    transition-duration: 0.5s;
     position: relative;
     left: -70px;
     opacity: 0;
@@ -1150,7 +1168,7 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
+    transition-duration: 0.5s;
     position: relative;
     left: -70px;
     opacity: 0;
@@ -1518,6 +1536,7 @@
     margin-right: 20px;
     font-weight: bold;
     font-size: 0.9em;
+    padding-left: 1rem;
   }
 
   /*PLATS*/
@@ -1583,6 +1602,7 @@
     margin-right: 20px;
     font-weight: bold;
     font-size: 0.9em;
+    padding-left: 1rem;
   }
 
   /*DESSERT*/
@@ -1648,6 +1668,7 @@
     margin-right: 20px;
     font-weight: bold;
     font-size: 0.9em;
+    padding-left: 1rem;
   }
 
   /*ANIMATIONS*/
@@ -1712,7 +1733,7 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
+    transition-duration: 0.5s;
     position: relative;
     left: -70px;
     opacity: 0;
@@ -1755,7 +1776,7 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
+    transition-duration: 0.5s;
     opacity: 0;
   }
   .bloc-menu__plats__bubble:hover .bloc-menu__plats__bubble__check {
@@ -1795,7 +1816,7 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
+    transition-duration: 0.5s;
     position: relative;
     left: -70px;
     opacity: 0;

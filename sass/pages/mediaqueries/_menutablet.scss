@@ -100,6 +100,7 @@
             margin-right: 20px;
             font-weight: bold;
             font-size: 0.9em;
+            padding-left: 1rem;
         }
     }
 }
@@ -171,6 +172,7 @@
             margin-right: 20px;
             font-weight: bold;
             font-size: 0.9em;
+            padding-left: 1rem;
         }
     }
 }
@@ -242,6 +244,7 @@
             margin-right: 20px;
             font-weight: bold;
             font-size: 0.9em;
+            padding-left: 1rem;
         }
     }
 }
@@ -319,7 +322,7 @@
     justify-content: center;
     align-items: center;
     margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 50ms;
+    transition-duration: 0.5s;
     position: relative;
     left: -70px;
    opacity: 0;
@@ -367,7 +370,7 @@
         justify-content: center;
         align-items: center;
         margin: -1rem -5rem -1rem 1rem;
-        transition-duration: 50ms;
+        transition-duration: 0.5s;
         position: relative;
         left: -70px;
        opacity: 0;
@@ -418,7 +421,7 @@
         justify-content: center;
         align-items: center;
         margin: -1rem -5rem -1rem 1rem;
-        transition-duration: 50ms;
+        transition-duration: 0.5s;
         position: relative;
         left: -70px;
        opacity: 0;
