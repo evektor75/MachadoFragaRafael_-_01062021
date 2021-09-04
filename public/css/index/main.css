@@ -630,7 +630,7 @@
     margin-top: 70px;
     width: 100%;
     display: block;
-    padding-bottom: 65px;
+    padding-bottom: 45px;
   }
   #bloc-restaurants h2 {
     padding-top: 40px;
@@ -651,7 +651,7 @@
     margin-left: 15px;
     border-radius: 15px;
     background-color: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
   .bloc-restaurants__box__photo {
     height: 175px;
