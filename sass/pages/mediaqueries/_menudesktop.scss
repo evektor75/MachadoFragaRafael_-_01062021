@@ -5,7 +5,7 @@
     margin-top: 15px;
 }
 /*ENTREES*/ 
-#bloc-menu {
+#bloc-menubox {
     width: 100%;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -31,7 +31,7 @@
     }
 }
 
-.bloc-menu__entrees {
+.bloc-menu {
     &__title {
     width: 35px;
     height: 25px;
@@ -98,149 +98,7 @@
     }
 }
 
-/*PLATS*/ 
 
-#bloc-menus__plats {
-    margin-left: 10px;
-}
-
-.bloc-menu__plats {
-    &__title {
-    width: 35px;
-    height: 25px;
-    border-bottom: 3px solid $underline-color;
-    margin-bottom: 15px;
-    padding-bottom: 3px;
-    h2 {
-        text-transform: uppercase;
-        color:$text-color;
-        font-weight: normal;
-        font-size: 1.2em;
-        }
-    }
-
-    &__bubble {
-        width: 350px;
-        height: 70px;
-        margin-bottom: 15px;
-        background-color: $background-color-primary;
-        border-radius: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        animation: menu-apparition 0.6s;
-        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-        &__heading{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        &__meal{
-            margin-left: 10px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            &__name{
-                font-weight: bold;
-                font-size: 1.1em;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                margin-top: 5px;
-            }
-            &__content {
-                margin-top: 5px;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                font-size: 15px;
-            }
-        }
-        
-        
-        }
-        &__icon{
-            margin-top: 35px;
-            margin-left: auto;
-            margin-right: 20px;
-            font-weight: bold;
-            font-size: 0.9em;
-            padding-left: 1rem;
-        }
-    }
-}
-
-/*DESSERT*/ 
-
-#bloc-menus__desserts {
-    margin-left: 10px;
-}
-
-.bloc-menu__desserts {
-    &__title {
-    width: 35px;
-    height: 25px;
-    border-bottom: 3px solid $underline-color;
-    margin-bottom: 15px;
-    padding-bottom: 3px;
-    h2 {
-        text-transform: uppercase;
-        color:$text-color;
-        font-weight: normal;
-        font-size: 1.2em;
-        }
-    }
-
-    &__bubble {
-        width: 350px;
-        height: 70px;
-        margin-bottom: 15px;
-        background-color: $background-color-primary;
-        border-radius: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        animation: menu-apparition 0.6s;
-        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-        &__heading{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        &__meal{
-            margin-left: 10px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            &__name{
-                font-weight: bold;
-                font-size: 1.1em;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                margin-top: 5px;
-            }
-            &__content {
-                margin-top: 5px;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                font-size: 15px;
-            }
-        }
-        
-        
-        }
-        &__icon{
-            margin-top: 35px;
-            margin-left: auto;
-            margin-right: 20px;
-            font-weight: bold;
-            font-size: 0.9em;
-            padding-left: 1rem;
-        }
-    }
-}
 
 
 /*ANIMATIONS*/
@@ -267,7 +125,7 @@
     }
 }
 
-#bloc-menu__heading__icon:hover {
+#bloc-menubox__heading__icon:hover {
     .heart-icon-full {
         animation: fill 0.3s forwards;
         
@@ -304,55 +162,7 @@
 /*-----------*/
 
 
-.bloc-menu__entrees__bubble {
-    &__check{
-    background: $tertiary-color;
-    width: 60px;
-    height: 100%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius:15px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -1rem -5rem -1rem 1rem;
-    transition-duration: 0.5s;
-    position: relative;
-    left: -70px;
-   opacity: 0;
-    }
-
-    .bloc-menu__entrees__bubble:hover &__check{
-        margin-right: -1rem;
-        position: initial;
-        opacity: 1;
-    }
-    
-    i {
-        font-size: 1.5em;
-        color: white;
-    }
-
-}
-
-.bloc-menu__entrees__bubble__check__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    transform: rotate(-180deg);
-    transition-duration: 0.6s;
-}
-
-.bloc-menu__entrees__bubble:hover .bloc-menu__entrees__bubble__check__icon{
-    transform: rotate(0);
-}
-.bloc-menu__entrees__bubble:hover .bloc-menu__entrees__bubble__icon {
-    margin-right: 0;
-}
-
-
-.bloc-menu__plats__bubble {
+.bloc-menu__bubble {
     &__check{
         background: $tertiary-color;
         width: 60px;
@@ -363,30 +173,39 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: -1rem -5rem -1rem 1rem;
         transition-duration: 0.5s;
-       opacity: 0;
-    }
-
-    .bloc-menu__plats__bubble:hover &__check{
-        margin-right: -1rem;
-        opacity: 1;
-    }
+        transform: scaleX(0);
+        opacity: 0;
+        position: absolute;
+        right: 0px;
+        i {
+            font-size: 1.5em;
+            color: white;
+        }
     
-    i {
-        font-size: 1.5em;
-        color: white;
-    }
-
+        }
 }
-.bloc-menu__plats__bubble:hover{
-    .bloc-menu__plats__bubble__icon {
-    margin-right: 0;
+
+.bloc-menu__bubble:hover {
+
+    .bloc-menu__bubble__check{
+    transform: scaleX(1);
+    transition: 0.55s;
+    transform-origin: right;
+    opacity: 1;
     }
 
-} 
+    .bloc-menu__bubble__icon{
+        margin-right: 70px;
+        transition: margin-right 0.5s;
+        
+    }
+  
+    
+    
+}
 
-.bloc-menu__plats__bubble__check__icon {
+.bloc-menu__bubble__check i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -395,58 +214,10 @@
     transition-duration: 0.6s;
 }
 
-.bloc-menu__plats__bubble:hover .bloc-menu__plats__bubble__check__icon{
+.bloc-menu__bubble:hover .bloc-menu__bubble__check i{
     transform: rotate(0);
 }
 
-
-.bloc-menu__desserts__bubble {
-    &__check{
-        background: $tertiary-color;
-        width: 60px;
-        height: 100%;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius:15px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: -1rem -5rem -1rem 1rem;
-        transition-duration: 0.5s;
-        position: relative;
-        left: -70px;
-       opacity: 0;
-    }
-
-    .bloc-menu__desserts__bubble:hover &__check {
-        margin-right: -1rem;
-        position: initial;
-        opacity: 1;
-    }
-    
-    
-    i {
-        font-size: 1.5em;
-        color: white;
-    }
-
-}
-
-.bloc-menu__desserts__bubble__check__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    transform: rotate(-180deg);
-    transition-duration: 0.6s;
-}
-
-.bloc-menu__desserts__bubble:hover .bloc-menu__desserts__bubble__check__icon{
-    transform: rotate(0);
-}
-.bloc-menu__desserts__bubble:hover .bloc-menu__desserts__bubble__icon {
-    margin-right: 0;
-}
 
 @keyframes menu-apparition {
     0% {
@@ -458,7 +229,7 @@
 }
 
 
-  @for $i from 0 to 10 {
+  @for $i from 0 to 11 {
     .delay-#{$i} {
       animation-delay: #{$i/ 10}s;
     }

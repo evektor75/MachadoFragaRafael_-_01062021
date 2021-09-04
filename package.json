@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./sass:public/css/"
+    "sass":"sass --watch ./sass:public/css/",
+    "prefix":"postcss ./public/css --use autoprefixer -d ./public/css/prefixed/"
 },
 
   "repository": {
@@ -13,8 +14,10 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist":"last 4 versions",
   "bugs": {
     "url": "https://github.com/evektor75/MachadoFragaRafael_-_01062021/issues"
   },
   "homepage": "https://github.com/evektor75/MachadoFragaRafael_-_01062021#readme"
 }
+ 
