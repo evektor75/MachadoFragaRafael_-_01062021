@@ -566,10 +566,6 @@
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
   }
 
-  #bloc-explore__button {
-    margin-top: 15px;
-  }
-
   /*Fonctionnement*/
   .bloc-fonctionnement {
     margin-top: 45px;
@@ -977,10 +973,6 @@
   #bloc-explore__button:hover {
     background-image: linear-gradient(-10deg, #a16be0, #ff93e1);
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-  }
-
-  #bloc-explore__button {
-    margin-top: 15px;
   }
 
   /*Fonctionnement*/
